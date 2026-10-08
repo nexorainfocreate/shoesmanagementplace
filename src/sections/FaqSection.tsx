@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FAQ_ITEMS } from '../data/features'
-import { Plus, Minus, HelpCircle, MessageSquare } from 'lucide-react'
+import { Plus, Minus, HelpCircle, Instagram } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
 
 export const FaqSection: React.FC = () => {
@@ -115,18 +115,18 @@ export const FaqSection: React.FC = () => {
               Have a specific question about your store hardware or workflow?
             </h4>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', margin: 0 }}>
-              Speak directly with our footwear retail specialists on WhatsApp.
+              Speak directly with our footwear retail specialists via Instagram DM.
             </p>
           </div>
           <a
-            href={SITE_CONFIG.links.whatsappDirect}
+            href={SITE_CONFIG.links.instagramDirect}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary btn-sm"
             style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
           >
-            <MessageSquare size={14} color="#059669" />
-            <span>Chat on WhatsApp</span>
+            <Instagram size={14} color="#e1306c" />
+            <span>DM on Instagram</span>
           </a>
         </div>
       </div>

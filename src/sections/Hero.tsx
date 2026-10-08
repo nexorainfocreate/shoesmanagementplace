@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, MessageSquare, Check, ShieldCheck, Sparkles, ZoomIn } from 'lucide-react'
+import { ArrowRight, Check, ShieldCheck, Sparkles, ZoomIn, Instagram } from 'lucide-react'
 import { SITE_CONFIG, getAssetUrl } from '../config'
 
 interface HeroProps {
@@ -65,14 +65,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenScreenshot }) => {
           }}
         >
           <a
-            href={SITE_CONFIG.links.whatsappDirect}
+            href={SITE_CONFIG.links.instagramDirect}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-lg"
             style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
           >
-            <span>Book a Store Demo</span>
-            <ArrowRight size={16} />
+            <Instagram size={18} />
+            <span>Book a Demo via Instagram (@vernixdigital)</span>
           </a>
           <a
             href="#product"

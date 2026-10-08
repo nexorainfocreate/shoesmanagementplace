@@ -128,13 +128,13 @@ All assets and real application screenshots are bundled locally inside the repos
 
 ## 🛠️ How to Customize Contact Details
 
-Open [`src/config.ts`](file:///c:/Users/patel/OneDrive/Desktop/yug/src/config.ts) to update phone numbers, WhatsApp links, and emails:
+Open [`src/config.ts`](file:///c:/Users/patel/OneDrive/Desktop/yug/shoesplace-website/src/config.ts) to update phone numbers, Instagram links, and emails:
 
 ```typescript
 export const SITE_CONFIG = {
-  contactEmail: 'your-email@yourdomain.com',
-  whatsappNumber: '+919876543210',
-  whatsappDisplay: '+91 98765 43210',
+  contactEmail: 'contact@shoesplace.com',
+  instagramUrl: 'https://www.instagram.com/vernixdigital/',
+  instagramHandle: '@vernixdigital',
   phoneNumber: '+919876543210',
   phoneDisplay: '+91 (0) 98765 43210',
   // ...

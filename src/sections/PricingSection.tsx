@@ -152,7 +152,7 @@ export const PricingSection: React.FC = () => {
               {/* Plan Action CTA */}
               <div>
                 <a
-                  href={SITE_CONFIG.links.whatsappDirect}
+                  href={SITE_CONFIG.links.instagramDirect}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`btn ${plan.highlighted ? 'btn-primary' : 'btn-secondary'}`}
@@ -163,7 +163,7 @@ export const PricingSection: React.FC = () => {
                 </a>
                 <div style={{ textAlign: 'center', marginTop: '10px' }}>
                   <span style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                    {plan.ctaNote}
+                    Instant response via Instagram DM @vernixdigital
                   </span>
                 </div>
               </div>

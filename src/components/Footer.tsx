@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Mail, Phone, MessageSquare, ShieldCheck, Heart } from 'lucide-react'
-import { SITE_CONFIG } from '../config'
+import { Mail, Phone, Instagram, ShieldCheck, Heart } from 'lucide-react'
+import { SITE_CONFIG, getAssetUrl } from '../config'
 
 export const Footer: React.FC = () => {
   return (
@@ -27,20 +27,17 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand & Proposition */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div
+              <img
+                src={getAssetUrl('logo.jpg')}
+                alt="ShoesPlace Logo"
                 style={{
-                  width: '32px',
-                  height: '32px',
+                  width: '34px',
+                  height: '34px',
                   borderRadius: '6px',
-                  backgroundColor: '#1e293b',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#3b82f6'
+                  objectFit: 'cover',
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
                 }}
-              >
-                <Box size={18} />
-              </div>
+              />
               <span style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', letterSpacing: '-0.02em' }}>
                 ShoesPlace
               </span>
@@ -108,7 +105,7 @@ export const Footer: React.FC = () => {
               Connect & Demo
             </h4>
             <a
-              href={SITE_CONFIG.links.whatsappDirect}
+              href={SITE_CONFIG.links.instagramDirect}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -116,15 +113,15 @@ export const Footer: React.FC = () => {
                 alignItems: 'center',
                 gap: '8px',
                 fontSize: '13.5px',
-                color: '#34d399',
-                backgroundColor: 'rgba(52, 211, 153, 0.1)',
+                color: '#f43f5e',
+                backgroundColor: 'rgba(244, 63, 94, 0.1)',
                 padding: '8px 12px',
                 borderRadius: '6px',
-                border: '1px solid rgba(52, 211, 153, 0.2)'
+                border: '1px solid rgba(244, 63, 94, 0.2)'
               }}
             >
-              <MessageSquare size={16} />
-              <span>WhatsApp Direct</span>
+              <Instagram size={16} />
+              <span>DM @vernixdigital</span>
             </a>
             <a
               href={SITE_CONFIG.links.emailDirect}

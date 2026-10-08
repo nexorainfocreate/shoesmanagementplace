@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, ArrowUpRight, MessageSquare, ShieldCheck, Box } from 'lucide-react'
-import { SITE_CONFIG } from '../config'
+import { Menu, X, ArrowUpRight, Instagram } from 'lucide-react'
+import { SITE_CONFIG, getAssetUrl } from '../config'
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -31,21 +31,17 @@ export const Navbar: React.FC = () => {
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px' }}>
           {/* Brand Logo */}
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div
+            <img
+              src={getAssetUrl('logo.jpg')}
+              alt="ShoesPlace Logo"
               style={{
-                width: '36px',
-                height: '36px',
+                width: '38px',
+                height: '38px',
                 borderRadius: '8px',
-                backgroundColor: '#0f172a',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#ffffff',
-                boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+                objectFit: 'cover',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.12)'
               }}
-            >
-              <Box size={20} color="#3b82f6" />
-            </div>
+            />
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span style={{ fontSize: '18px', fontWeight: 800, letterSpacing: '-0.03em', color: 'var(--text-primary)', lineHeight: 1.1 }}>
                 ShoesPlace
@@ -91,14 +87,14 @@ export const Navbar: React.FC = () => {
           {/* Right Action Buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }} className="desktop-actions">
             <a
-              href={SITE_CONFIG.links.whatsappDirect}
+              href={SITE_CONFIG.links.instagramDirect}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary btn-sm"
               style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
             >
-              <MessageSquare size={14} color="#059669" />
-              <span>WhatsApp Demo</span>
+              <Instagram size={14} color="#e1306c" />
+              <span>DM on Instagram</span>
             </a>
             <a
               href="#contact"
@@ -197,14 +193,14 @@ export const Navbar: React.FC = () => {
           </a>
           <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <a
-              href={SITE_CONFIG.links.whatsappDirect}
+              href={SITE_CONFIG.links.instagramDirect}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
-              style={{ width: '100%' }}
+              style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
             >
-              <MessageSquare size={16} color="#059669" />
-              <span>WhatsApp Demo</span>
+              <Instagram size={16} color="#e1306c" />
+              <span>DM on Instagram (@vernixdigital)</span>
             </a>
             <a
               href="#contact"

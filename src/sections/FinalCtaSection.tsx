@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, MessageSquare, Mail, ShieldCheck, ZoomIn } from 'lucide-react'
+import { ArrowRight, Instagram, Mail, ShieldCheck, ZoomIn } from 'lucide-react'
 import { SITE_CONFIG, getAssetUrl } from '../config'
 
 interface FinalCtaProps {
@@ -54,14 +54,14 @@ export const FinalCtaSection: React.FC<FinalCtaProps> = ({ onOpenScreenshot }) =
           }}
         >
           <a
-            href={SITE_CONFIG.links.whatsappDirect}
+            href={SITE_CONFIG.links.instagramDirect}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-lg"
             style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
           >
-            <MessageSquare size={16} />
-            <span>Book a Live Store Demo</span>
+            <Instagram size={18} />
+            <span>DM on Instagram for Live Demo (@vernixdigital)</span>
           </a>
           <a
             href={SITE_CONFIG.links.emailDirect}

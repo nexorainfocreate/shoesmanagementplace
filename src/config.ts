@@ -11,13 +11,10 @@ export const SITE_CONFIG = {
     'From the first barcode scan to your end-of-day profit, ShoesPlace brings your entire footwear business into one powerful, offline-first system.',
   version: '0.2.2',
 
-  // Contact Channels (configurable for GitHub Pages deployment)
+  // Contact Channels
   contactEmail: 'contact@shoesplace.com',
-  whatsappNumber: '+919876543210',
-  whatsappDisplay: '+91 98765 43210',
-  whatsappMessage: encodeURIComponent(
-    'Hello ShoesPlace team! I run a footwear store and would like to see a demo of ShoesPlace POS & Retail Suite.'
-  ),
+  instagramUrl: 'https://www.instagram.com/vernixdigital/',
+  instagramHandle: '@vernixdigital',
   phoneNumber: '+919876543210',
   phoneDisplay: '+91 (0) 98765 43210',
   demoUrl: '#contact',
@@ -25,7 +22,7 @@ export const SITE_CONFIG = {
   // Links
   links: {
     github: 'https://github.com',
-    whatsappDirect: 'https://wa.me/919876543210?text=Hello%20ShoesPlace%20team!%20I%20would%20like%20to%20learn%20more%20about%20ShoesPlace.',
+    instagramDirect: 'https://www.instagram.com/vernixdigital/',
     emailDirect: 'mailto:contact@shoesplace.com?subject=ShoesPlace%20Footwear%20POS%20Inquiry'
   }
 }

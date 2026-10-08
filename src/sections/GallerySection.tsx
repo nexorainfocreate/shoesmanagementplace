@@ -34,6 +34,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ onOpenScreenshot
 
         {/* Category Filter Tabs */}
         <div
+          className="mobile-scroll-x"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -70,8 +71,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ onOpenScreenshot
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
-            gap: '24px'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
+            gap: '20px'
           }}
         >
           {filteredScreenshots.map((item) => (

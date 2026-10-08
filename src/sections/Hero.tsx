@@ -28,13 +28,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenScreenshot }) => {
         {/* Main Headline */}
         <h1
           style={{
-            fontSize: 'clamp(2.5rem, 5.2vw, 4.25rem)',
+            fontSize: 'clamp(1.85rem, 5.2vw, 4.25rem)',
             fontWeight: 800,
             letterSpacing: '-0.035em',
             color: 'var(--text-primary)',
-            lineHeight: 1.1,
+            lineHeight: 1.15,
             maxWidth: '980px',
-            margin: '0 auto 24px auto'
+            margin: '0 auto 20px auto'
           }}
         >
           The operating system built for footwear stores.
@@ -43,11 +43,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenScreenshot }) => {
         {/* Supporting Copy */}
         <p
           style={{
-            fontSize: 'clamp(1.1rem, 1.4vw, 1.3rem)',
+            fontSize: 'clamp(1rem, 2.5vw, 1.25rem)',
             color: 'var(--text-secondary)',
             lineHeight: 1.6,
             maxWidth: '780px',
-            margin: '0 auto 36px auto'
+            margin: '0 auto 32px auto'
           }}
         >
           Sell faster, manage every size and color, track inventory, understand your customers, and know your real profit — all from one powerful platform.

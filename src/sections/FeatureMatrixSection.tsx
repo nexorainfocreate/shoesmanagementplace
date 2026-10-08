@@ -25,6 +25,7 @@ export const FeatureMatrixSection: React.FC = () => {
 
         {/* Category Tabs Bar */}
         <div
+          className="mobile-scroll-x"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -60,6 +61,7 @@ export const FeatureMatrixSection: React.FC = () => {
 
         {/* Active Category Content Box */}
         <div
+          className="card-responsive"
           style={{
             backgroundColor: '#ffffff',
             borderRadius: '16px',
@@ -92,8 +94,8 @@ export const FeatureMatrixSection: React.FC = () => {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '24px'
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+              gap: '20px'
             }}
           >
             {activeCategory.features.map((feat, idx) => (

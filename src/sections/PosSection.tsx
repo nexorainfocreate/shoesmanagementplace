@@ -110,7 +110,7 @@ export const PosSection: React.FC<PosSectionProps> = ({ onOpenScreenshot }) => {
               gap: '12px'
             }}
           >
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="mobile-scroll-x" style={{ display: 'flex', gap: '8px' }}>
               <button
                 onClick={() => setActiveTab('cart')}
                 style={{

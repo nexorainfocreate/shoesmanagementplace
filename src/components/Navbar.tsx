@@ -76,9 +76,6 @@ export const Navbar: React.FC = () => {
             <a href="#gallery" style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--text-secondary)' }}>
               Gallery
             </a>
-            <a href="#pricing" style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--text-secondary)' }}>
-              Pricing
-            </a>
             <a href="#faq" style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--text-secondary)' }}>
               FAQ
             </a>
@@ -176,13 +173,6 @@ export const Navbar: React.FC = () => {
             style={{ fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)' }}
           >
             Screenshot Gallery (24 Screens)
-          </a>
-          <a
-            href="#pricing"
-            onClick={() => setMobileMenuOpen(false)}
-            style={{ fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)' }}
-          >
-            Pricing
           </a>
           <a
             href="#faq"

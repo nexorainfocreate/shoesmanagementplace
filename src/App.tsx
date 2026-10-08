@@ -23,7 +23,6 @@ import { FeatureMatrixSection } from './sections/FeatureMatrixSection'
 import { HowItWorksSection } from './sections/HowItWorksSection'
 import { WhoIsItForSection } from './sections/WhoIsItForSection'
 import { GallerySection } from './sections/GallerySection'
-import { PricingSection } from './sections/PricingSection'
 import { FaqSection } from './sections/FaqSection'
 import { FinalCtaSection } from './sections/FinalCtaSection'
 
@@ -64,7 +63,6 @@ export const App: React.FC = () => {
         <HowItWorksSection />
         <WhoIsItForSection />
         <GallerySection onOpenScreenshot={handleOpenScreenshot} />
-        <PricingSection />
         <FaqSection />
         <FinalCtaSection onOpenScreenshot={handleOpenScreenshot} />
       </main>

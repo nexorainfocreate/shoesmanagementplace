@@ -161,7 +161,7 @@ export const PosSection: React.FC<PosSectionProps> = ({ onOpenScreenshot }) => {
               </button>
             </div>
 
-            <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+            <span className="desktop-only-caption" style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
               Source: Real ShoesPlace Desktop App
             </span>
           </div>
@@ -181,6 +181,7 @@ export const PosSection: React.FC<PosSectionProps> = ({ onOpenScreenshot }) => {
           </div>
 
           <div
+            className="product-caption-row"
             style={{
               display: 'flex',
               alignItems: 'center',

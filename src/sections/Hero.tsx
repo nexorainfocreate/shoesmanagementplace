@@ -135,6 +135,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenScreenshot }) => {
 
           {/* Floating Subtle Spec Pill */}
           <div
+            className="hero-spec-pill"
             style={{
               position: 'absolute',
               bottom: '24px',

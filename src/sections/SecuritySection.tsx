@@ -123,7 +123,7 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenScreensh
               gap: '12px'
             }}
           >
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="mobile-scroll-x" style={{ display: 'flex', gap: '8px' }}>
               <button
                 onClick={() => setActiveTab('audit')}
                 className={`btn btn-sm ${activeTab === 'audit' ? 'btn-primary' : 'btn-secondary'}`}

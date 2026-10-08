@@ -136,7 +136,8 @@ export const Navbar: React.FC = () => {
             display: 'flex',
             flexDirection: 'column',
             gap: '20px',
-            borderTop: '1px solid var(--border-subtle)'
+            borderTop: '1px solid var(--border-subtle)',
+            overflowY: 'auto'
           }}
         >
           <a

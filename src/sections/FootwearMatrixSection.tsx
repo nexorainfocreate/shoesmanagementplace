@@ -35,6 +35,7 @@ export const FootwearMatrixSection: React.FC<FootwearMatrixProps> = ({ onOpenScr
 
         {/* Visual Footwear Hierarchy Flowchart */}
         <div
+          className="matrix-hierarchy-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
@@ -82,6 +83,7 @@ export const FootwearMatrixSection: React.FC<FootwearMatrixProps> = ({ onOpenScr
         <div className="grid-2" style={{ gap: '36px' }}>
           {/* Card 1: Catalog */}
           <div
+            className="matrix-card card-responsive"
             style={{
               display: 'flex',
               flexDirection: 'column',
@@ -126,6 +128,7 @@ export const FootwearMatrixSection: React.FC<FootwearMatrixProps> = ({ onOpenScr
 
           {/* Card 2: Add Product Modal */}
           <div
+            className="matrix-card card-responsive"
             style={{
               display: 'flex',
               flexDirection: 'column',

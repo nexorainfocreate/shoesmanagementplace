@@ -117,7 +117,7 @@ export const ProcurementSection: React.FC<ProcurementProps> = ({ onOpenScreensho
               gap: '12px'
             }}
           >
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="mobile-scroll-x" style={{ display: 'flex', gap: '8px' }}>
               <button
                 onClick={() => setTab('po')}
                 className={`btn btn-sm ${tab === 'po' ? 'btn-primary' : 'btn-secondary'}`}

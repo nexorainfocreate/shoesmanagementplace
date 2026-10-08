@@ -73,7 +73,7 @@ export const ExpenseSection: React.FC<ExpenseSectionProps> = ({ onOpenScreenshot
 
           {/* Right Visual Frame */}
           <div className="feature-visual">
-            <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+            <div className="mobile-scroll-x" style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
               <button
                 onClick={() => setActiveView('tracker')}
                 className={`btn btn-sm ${activeView === 'tracker' ? 'btn-primary' : 'btn-secondary'}`}

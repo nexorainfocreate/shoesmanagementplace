@@ -131,6 +131,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div
+          className="footer-bottom-row"
           style={{
             paddingTop: '32px',
             borderTop: '1px solid #1e293b',
@@ -146,11 +147,11 @@ export const Footer: React.FC = () => {
           <div>
             © {new Date().getFullYear()} ShoesPlace Management POS & Retail Suite. All rights reserved.
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <div className="footer-bottom-links" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
             <span>Built specifically for modern footwear retailers</span>
-            <span>•</span>
+            <span className="bullet-separator">•</span>
             <a href="#faq" style={{ color: '#64748b' }}>Technical FAQ</a>
-            <span>•</span>
+            <span className="bullet-separator">•</span>
             <a href="#gallery" style={{ color: '#64748b' }}>App Gallery (24 Screens)</a>
           </div>
         </div>

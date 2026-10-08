@@ -44,6 +44,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
 
   return (
     <div
+      className="modal-overlay"
       style={{
         position: 'fixed',
         inset: 0,
@@ -60,6 +61,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
     >
       {/* Modal Dialog Card */}
       <div
+        className="modal-card"
         style={{
           width: '100%',
           maxWidth: '1280px',
@@ -75,6 +77,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
       >
         {/* Header Bar */}
         <div
+          className="modal-header"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -84,7 +87,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
             backgroundColor: '#f8fafc'
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
             <span
               style={{
                 fontFamily: 'var(--font-mono)',
@@ -94,18 +97,19 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
                 backgroundColor: 'var(--bg-accent-subtle)',
                 padding: '3px 8px',
                 borderRadius: '4px',
-                border: '1px solid var(--brand-subtle)'
+                border: '1px solid var(--brand-subtle)',
+                flexShrink: 0
               }}
             >
               SCREEN {currentItem.number} OF {SCREENSHOTS.length}
             </span>
-            <h3 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--text-primary)' }}>
+            <h3 className="modal-title-text" style={{ fontSize: '16px', fontWeight: 700, color: 'var(--text-primary)' }}>
               {currentItem.title}
             </h3>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
+            <span className="modal-esc-hint" style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
               Press <kbd style={{ padding: '2px 5px', background: '#e2e8f0', borderRadius: '3px' }}>Esc</kbd> to close
             </span>
             <button
@@ -130,6 +134,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
 
         {/* Image Stage with Next/Prev Controls */}
         <div
+          className="modal-img-stage"
           style={{
             position: 'relative',
             backgroundColor: '#0f172a',
@@ -203,6 +208,7 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
 
         {/* Footer Details */}
         <div
+          className="modal-footer"
           style={{
             padding: '16px 24px',
             backgroundColor: '#ffffff',
@@ -211,7 +217,9 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
             alignItems: 'center',
             justifyContent: 'space-between',
             flexWrap: 'wrap',
-            gap: '16px'
+            gap: '16px',
+            maxHeight: '22vh',
+            overflowY: 'auto'
           }}
         >
           <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', maxWidth: '650px', margin: 0 }}>
@@ -241,6 +249,35 @@ export const ScreenshotModal: React.FC<ScreenshotModalProps> = ({
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .modal-overlay {
+            padding: 8px !important;
+          }
+          .modal-card {
+            max-height: 96vh !important;
+            border-radius: 12px !important;
+          }
+          .modal-header {
+            padding: 10px 14px !important;
+          }
+          .modal-title-text {
+            font-size: 13px !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            max-width: 140px !important;
+          }
+          .modal-esc-hint {
+            display: none !important;
+          }
+          .modal-footer {
+            padding: 10px 14px !important;
+            gap: 8px !important;
+          }
+        }
+      `}</style>
     </div>
   )
 }

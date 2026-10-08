@@ -63,6 +63,7 @@ export const HardwareEcosystemSection: React.FC = () => {
 
         {/* 5-Step Connected Ecosystem Grid */}
         <div
+          className="hardware-steps-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',

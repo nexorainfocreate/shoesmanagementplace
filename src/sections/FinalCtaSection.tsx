@@ -74,6 +74,7 @@ export const FinalCtaSection: React.FC<FinalCtaProps> = ({ onOpenScreenshot }) =
 
         {/* Assurance Bulletins */}
         <div
+          className="assurance-bulletins"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -88,11 +89,11 @@ export const FinalCtaSection: React.FC<FinalCtaProps> = ({ onOpenScreenshot }) =
           <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <ShieldCheck size={14} color="#059669" /> 100% Offline-first reliability
           </span>
-          <span>•</span>
+          <span className="bullet-separator">•</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <ShieldCheck size={14} color="#059669" /> Free catalog Excel migration
           </span>
-          <span>•</span>
+          <span className="bullet-separator">•</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <ShieldCheck size={14} color="#059669" /> Dedicated hardware calibration
           </span>

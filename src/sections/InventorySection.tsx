@@ -35,6 +35,7 @@ export const InventorySection: React.FC<InventorySectionProps> = ({ onOpenScreen
 
         {/* Visual Lifecycle Flow: STOCK IN -> INVENTORY -> SALE -> EXCHANGE -> AUDIT TRAIL */}
         <div
+          className="responsive-flow-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
@@ -102,7 +103,7 @@ export const InventorySection: React.FC<InventorySectionProps> = ({ onOpenScreen
               gap: '12px'
             }}
           >
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="mobile-scroll-x" style={{ display: 'flex', gap: '8px' }}>
               <button
                 onClick={() => setView('overview')}
                 className={`btn btn-sm ${view === 'overview' ? 'btn-primary' : 'btn-secondary'}`}

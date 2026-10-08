@@ -33,6 +33,7 @@ export const OfflineFirstSection: React.FC<OfflineFirstProps> = ({ onOpenScreens
 
         {/* Clean Architectural Offline Concept Diagram */}
         <div
+          className="responsive-flow-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',

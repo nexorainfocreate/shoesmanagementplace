@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Phone, Instagram, ShieldCheck, Heart } from 'lucide-react'
+import { Instagram, ShieldCheck, Heart } from 'lucide-react'
 import { SITE_CONFIG, getAssetUrl } from '../config'
 
 export const Footer: React.FC = () => {
@@ -115,7 +115,7 @@ export const Footer: React.FC = () => {
                 fontSize: '13.5px',
                 color: '#f43f5e',
                 backgroundColor: 'rgba(244, 63, 94, 0.1)',
-                padding: '8px 12px',
+                padding: '10px 14px',
                 borderRadius: '6px',
                 border: '1px solid rgba(244, 63, 94, 0.2)'
               }}
@@ -123,19 +123,8 @@ export const Footer: React.FC = () => {
               <Instagram size={16} />
               <span>DM @vernixdigital</span>
             </a>
-            <a
-              href={SITE_CONFIG.links.emailDirect}
-              style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#94a3b8' }}
-            >
-              <Mail size={15} />
-              <span>{SITE_CONFIG.contactEmail}</span>
-            </a>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#94a3b8' }}>
-              <Phone size={15} />
-              <span>{SITE_CONFIG.phoneDisplay}</span>
-            </div>
-            <p style={{ fontSize: '11.5px', color: '#64748b', marginTop: '8px', lineHeight: 1.5 }}>
-              Available 9:00 AM – 8:00 PM for retail store walkthroughs and onboarding.
+            <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '6px', lineHeight: 1.6 }}>
+              Reach out directly on Instagram for retail store walkthroughs, questions, and onboarding assistance.
             </p>
           </div>
         </div>

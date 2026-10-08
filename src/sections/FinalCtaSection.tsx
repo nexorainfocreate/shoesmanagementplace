@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Instagram, Mail, ShieldCheck, ZoomIn } from 'lucide-react'
+import { ArrowRight, Instagram, ShieldCheck, ZoomIn } from 'lucide-react'
 import { SITE_CONFIG, getAssetUrl } from '../config'
 
 interface FinalCtaProps {
@@ -64,12 +64,11 @@ export const FinalCtaSection: React.FC<FinalCtaProps> = ({ onOpenScreenshot }) =
             <span>DM on Instagram for Live Demo (@vernixdigital)</span>
           </a>
           <a
-            href={SITE_CONFIG.links.emailDirect}
+            href="#product"
             className="btn btn-secondary btn-lg"
-            style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
           >
-            <Mail size={16} />
-            <span>Email Product Inquiry</span>
+            <span>Explore Product Features</span>
+            <ArrowRight size={16} />
           </a>
         </div>
 

@@ -193,10 +193,12 @@ export const PricingSection: React.FC = () => {
             <span>Hardware installation support, thermal printer calibration, and catalog migration included.</span>
           </div>
           <a
-            href={SITE_CONFIG.links.emailDirect}
+            href={SITE_CONFIG.links.instagramDirect}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ color: 'var(--brand-primary)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}
           >
-            <span>Have custom multi-store requirements? Inquire here</span>
+            <span>Have custom multi-store requirements? DM @vernixdigital</span>
             <ArrowRight size={13} />
           </a>
         </div>

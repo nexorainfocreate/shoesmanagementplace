@@ -12,18 +12,14 @@ export const SITE_CONFIG = {
   version: '0.2.2',
 
   // Contact Channels
-  contactEmail: 'contact@shoesplace.com',
   instagramUrl: 'https://www.instagram.com/vernixdigital/',
   instagramHandle: '@vernixdigital',
-  phoneNumber: '+919876543210',
-  phoneDisplay: '+91 (0) 98765 43210',
   demoUrl: '#contact',
 
   // Links
   links: {
-    github: 'https://github.com',
-    instagramDirect: 'https://www.instagram.com/vernixdigital/',
-    emailDirect: 'mailto:contact@shoesplace.com?subject=ShoesPlace%20Footwear%20POS%20Inquiry'
+    github: 'https://github.com/nexorainfocreate/shoesmanagementplace.git',
+    instagramDirect: 'https://www.instagram.com/vernixdigital/'
   }
 }
 
